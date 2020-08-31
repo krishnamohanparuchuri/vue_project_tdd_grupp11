@@ -13,5 +13,8 @@ export default {
 
 
 <style scoped>
-
+h1{
+  color: black;
+  font-size: 123px;
+}
 </style>
