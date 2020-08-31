@@ -10,22 +10,22 @@ import productspage from '../views/productspage'
 Vue.use(Router)
 
 export default new Router({
-    mode: 'history',
-    routes: [{
-        path: '/',
-        name: "homepage",
-        component: homepage
-    },
-    {
-        path: '/about',
-        name: "aboutpage",
-        component: aboutpage
-    },
-    {
-        path: '/products',
-        name: "productspage",
-        component: productspage
-    },
+  mode: 'history',
+  routes: [{
+    path: '/',
+    name: "homepage",
+    component: homepage
+  },
+  {
+    path: '/about',
+    name: "aboutpage",
+    component: aboutpage
+  },
+  {
+    path: '/products',
+    name: "productspage",
+    component: productspage
+  },
 
-    ],
+  ],
 })

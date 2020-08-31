@@ -1,12 +1,16 @@
 import { shallowMount } from '@vue/test-utils';
-import HelloWorld from '@/components/HelloWorld.vue';
+import NavigationPage from '@/components/NavigationPage.vue';
 
-describe('HelloWorld.vue', () => {
-  it('renders props.msg when passed', () => {
-    const msg = 'new message';
-    const wrapper = shallowMount(HelloWorld, {
-      propsData: { msg },
-    });
-    expect(wrapper.text()).toMatch(msg);
+describe('NavigationPage.vue', () => {
+  it('renders the hello world', () => {
+    const msg = 'hello world';
+    const wrapper = shallowMount(NavigationPage);
+    expect(wrapper.find('h1').text()).toMatch(msg);
   });
+
+
+  test(' it should navigate to /about page', () => {
+
+  })
+
 });
