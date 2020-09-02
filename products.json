@@ -1,0 +1,41 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"title": "Desk Resin Telephone",
+			"price": 1229,
+			"color":"yellow"
+		},
+		{
+			"id": 2,
+			"title": "Rotary Design Retro",
+			"price": 899,
+			"color":"red"
+		},
+		{
+			"id": 3,
+			"title": "pinky queen",
+			"price": 1022,
+			"color":"green"
+		},
+		{
+			"id": 4,
+			"title": "royal blue",
+			"price": 79,
+			"color":"blue"
+		},
+		{
+			"id": 5,
+			"title": "magical phone",
+			"price": 599,
+			"color":"brown"
+		},
+		{
+			"id": 6,
+			"title": "Carachoe",
+			"desc": "Beautiful phone but the ringer is loud. Purchased it to match our bedroom decor but we have to leave it unplugged because there is no way to lower or silence the ringer. When plugged back in you have to reset the display completely. But it’s a really cute phone and works well.",
+			"price": 999,
+			"color":"grey"
+		}
+	]
+}
