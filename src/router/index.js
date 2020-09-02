@@ -3,7 +3,7 @@ import Router from 'vue-router'
 
 import HomePage from '../views/HomePage'
 import AboutPage from '../views/AboutPage'
-import ProductsPage from '../views/ProductsPage'
+import productspage from '../views/productspage'
 
 
 
@@ -23,8 +23,8 @@ export default new Router({
   },
   {
     path: '/products',
-    name: "ProductsPage",
-    component: ProductsPage
+    name: "productspage",
+    component: productspage
   },
 
   ],

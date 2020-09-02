@@ -23,7 +23,7 @@ import NavigationPage from "@/components/NavigationPage.vue";
 import ShoppingBag from "@/components/ShoppingBag.vue";
 import axios from "axios";
 export default {
-  name: "ProductsPage",
+  name: "productspage",
   components: {
     NavigationPage,
     ShoppingBag,
