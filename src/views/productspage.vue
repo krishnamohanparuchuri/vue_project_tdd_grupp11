@@ -1,6 +1,8 @@
 
 <template>
   <div>
+     <NavigationPage />
+     <ShoppingBag />
     <h1>Products</h1>
     <ul>
       <li v-for="product in products" :key="product.id">
@@ -11,16 +13,20 @@
         <p>Quantity</p>
         <button>-</button>
         </li>
-
     </ul>
-   
   </div>
 </template>
 
 <script>
+import NavigationPage from '@/components/NavigationPage.vue';
+import ShoppingBag from '@/components/ShoppingBag.vue';
 import axios from "axios";
 export default {
   name: "productspage",
+  components: {
+  NavigationPage, 
+  ShoppingBag
+},
    data() {
     return {
       products: [],

@@ -1,17 +1,26 @@
 <template>
   <div class="container">
-    <NavigationPage />
     <router-view />
   </div>
 </template>
 
 <script>
-import NavigationPage from "./components/NavigationPage.vue";
 
 export default {
   name: "App",
   components: {
-    NavigationPage,
   },
 };
 </script>
+<style>
+* {
+  box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body,html {
+    margin: 0;
+    padding: 0;
+    height:100%;
+}
+</style>
