@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import homepage from '../views/homepage'
-import aboutpage from '../views/aboutpage'
-import productspage from '../views/productspage'
+import HomePage from '../views/HomePage'
+import AboutPage from '../views/AboutPage'
+import ProductsPage from '../views/ProductsPage'
 
 
 
@@ -13,18 +13,18 @@ export default new Router({
   mode: 'history',
   routes: [{
     path: '/',
-    name: "homepage",
-    component: homepage
+    name: "HomePage",
+    component: HomePage
   },
   {
     path: '/about',
-    name: "aboutpage",
-    component: aboutpage
+    name: "AboutPage",
+    component: AboutPage
   },
   {
     path: '/products',
-    name: "productspage",
-    component: productspage
+    name: "ProductsPage",
+    component: ProductsPage
   },
 
   ],
