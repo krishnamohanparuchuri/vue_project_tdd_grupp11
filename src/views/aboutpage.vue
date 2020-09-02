@@ -2,33 +2,32 @@
   <div class="container">
     <NavigationPage />
     <ShoppingBag />
-      <div class="wrapper">
-        <img class="" src="" alt="logo">
-        <h1 class="title">{{ title }}</h1>
-        <p class="description">{{ description }}</p>
-      </div>
+    <div class="wrapper">
+      <img class="" src="" alt="logo" />
+      <h1 class="title">{{ title }}</h1>
+      <p class="description">{{ description }}</p>
+    </div>
   </div>
 </template>
 
 <script>
-
-import NavigationPage from '@/components/NavigationPage.vue';
-import ShoppingBag from '@/components/ShoppingBag.vue';
+import NavigationPage from "@/components/NavigationPage.vue";
+import ShoppingBag from "@/components/ShoppingBag.vue";
 
 export default {
-    name: 'aboutpage',
-    components: {
-  NavigationPage, 
-  ShoppingBag
-},
-    data() {
-      return {
-        title: 'About us',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-      };
-     
-    }
-}
+  name: "AboutPage",
+  components: {
+    NavigationPage,
+    ShoppingBag,
+  },
+  data() {
+    return {
+      title: "About us",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    };
+  },
+};
 </script>
 
 <style scoped>
@@ -39,9 +38,9 @@ export default {
 .wrapper {
   padding: 20px 32px;
 }
-h1{
+h1 {
   color: white;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-weight: 600;
 }
 .description {
