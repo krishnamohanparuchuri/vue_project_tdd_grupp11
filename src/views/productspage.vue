@@ -1,49 +1,74 @@
 
 <template>
-  <div>
-     <NavigationPage />
-     <ShoppingBag />
+  <div class="container">
+    <NavigationPage />
+    <ShoppingBag />
     <h1>Products</h1>
-    <ul>
-      <li v-for="product in products" :key="product.id">
-        <h1>{{ product.title }}</h1>
-    <h4>{{product.color}}</h4>
-        <h3>{{product.price}}</h3>
-        <button>+</button>
-        <p>Quantity</p>
-        <button>-</button>
+    <div class="product-div">
+      <ul>
+        <li v-for="product in products" :key="product.id">
+          <h1>{{ product.title }}</h1>
+          <h4>{{product.color}}</h4>
+          <h3>{{product.price}}</h3>
+          <button>+</button>
+          <p>Quantity</p>
+          <button>-</button>
         </li>
-    </ul>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
-import NavigationPage from '@/components/NavigationPage.vue';
-import ShoppingBag from '@/components/ShoppingBag.vue';
+import NavigationPage from "@/components/NavigationPage.vue";
+import ShoppingBag from "@/components/ShoppingBag.vue";
 import axios from "axios";
 export default {
   name: "productspage",
   components: {
-  NavigationPage, 
-  ShoppingBag
-},
-   data() {
+    NavigationPage,
+    ShoppingBag,
+  },
+  data() {
     return {
       products: [],
     };
   },
   async created() {
-    try{
-    const res = await axios.get(`http://localhost:3000/products`);
-    this.products = res.data;
-  } catch (e) {
-    console.log(e)
-  }
+    try {
+      const res = await axios.get(`http://localhost:3000/products`);
+      this.products = res.data;
+    } catch (e) {
+      console.log(e);
+    }
   },
- 
 };
 </script>
 
-<style lang="scss" scoped>
+<style  scoped>
+.container {
+  background: #50a280;
+}
 
+.product-div {
+	display: flex;
+	flex-wrap:wrap;
+  background: #50a280;
+  
+}
+
+
+ul{
+  width: 80%;
+
+}
+li {
+  background: whitesmoke;
+  box-shadow: 5px 5px 6px;
+  margin: 10px;
+  border-radius: 7.25px;
+
+  /* margin: 0 auto; */
+
+}
 </style>

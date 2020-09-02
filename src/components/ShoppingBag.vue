@@ -1,4 +1,16 @@
 <template>
-    <h1>shoppingcart</h1>
+  <div class="container">
+	  <img src="../assets/images/cart.svg" alt="">
+
+  </div>
 </template>
 
+<script>
+export default {
+
+}
+</script>
+
+<style>
+
+</style>
