@@ -44,23 +44,19 @@ export default {
 };
 </script>
 
-<<<<<<< HEAD
 <style  scoped>
 .container {
   background: #50a280;
 }
 
 .product-div {
-	display: flex;
-	flex-wrap:wrap;
+  display: flex;
+  flex-wrap: wrap;
   background: #50a280;
-
 }
 
-
-ul{
+ul {
   width: 80%;
-
 }
 li {
   background: whitesmoke;
@@ -69,9 +65,5 @@ li {
   border-radius: 7.25px;
 
   /* margin: 0 auto; */
-
 }
 </style>
-=======
-<style lang="scss" scoped></style>
->>>>>>> test_files
