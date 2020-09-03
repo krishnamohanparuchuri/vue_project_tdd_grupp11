@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <div class="container">
     <NavigationPage />
     <ShoppingBag />
@@ -16,22 +15,6 @@
         </li>
       </ul>
     </div>
-=======
-  <div>
-    <NavigationPage />
-    <ShoppingBag />
-    <h1>Products</h1>
-    <ul>
-      <li v-for="product in products" :key="product.id">
-        <h1>{{ product.title }}</h1>
-        <h4>{{ product.color }}</h4>
-        <h3>{{ product.price }}</h3>
-        <button>+</button>
-        <p>Quantity</p>
-        <button>-</button>
-      </li>
-    </ul>
->>>>>>> test_files
   </div>
 </template>
 
@@ -39,11 +22,12 @@
 import NavigationPage from "@/components/NavigationPage.vue";
 import ShoppingBag from "@/components/ShoppingBag.vue";
 import axios from "axios";
+
 export default {
   name: "ProductsPage",
   components: {
-    NavigationPage,
-    ShoppingBag,
+  NavigationPage,
+  ShoppingBag,
   },
   data() {
     return {
@@ -61,7 +45,6 @@ export default {
 };
 </script>
 
-<<<<<<< HEAD
 <style  scoped>
 .container {
   background: #50a280;
@@ -74,11 +57,10 @@ export default {
   
 }
 
-
 ul{
   width: 80%;
-
 }
+
 li {
   background: whitesmoke;
   box-shadow: 5px 5px 6px;
@@ -86,9 +68,5 @@ li {
   border-radius: 7.25px;
 
   /* margin: 0 auto; */
-
 }
 </style>
-=======
-<style lang="scss" scoped></style>
->>>>>>> test_files

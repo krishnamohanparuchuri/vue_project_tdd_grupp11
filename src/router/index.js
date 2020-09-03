@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import HomePage from '../views/HomePage'
-import AboutPage from '../views/AboutPage'
-import ProductsPage from '../views/ProductsPage'
+import HomePage from '../views/homepage'
+import AboutPage from '../views/aboutpage'
+import ProductsPage from '../views/productspage'
 
 
 

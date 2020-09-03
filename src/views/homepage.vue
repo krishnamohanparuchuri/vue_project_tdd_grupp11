@@ -1,14 +1,9 @@
 <template>
   <div class="container">
-<<<<<<< HEAD
     <div class="container-header">
       <NavigationPage />
       <ShoppingBag />
     </div>
-=======
-    <NavigationPage />
-    <ShoppingBag />
->>>>>>> test_files
     <h1>homepage</h1>
   </div>
 </template>
@@ -25,7 +20,6 @@ export default {
   },
 };
 </script>
-<<<<<<< HEAD
 
 <style scoped>
 .container {
@@ -42,7 +36,3 @@ export default {
 
 }
 </style>
-=======
-
-<style></style>
->>>>>>> test_files
