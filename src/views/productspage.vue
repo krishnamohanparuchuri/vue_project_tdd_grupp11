@@ -53,9 +53,9 @@ export default {
 .product-div {
   display: flex;
   flex-wrap: wrap;
-
+}
 ul{
-  width: 80%;
+  width: 80%ö
 }
 
 li {
@@ -76,6 +76,4 @@ h3 {
   font-weight: 300;
 }
 
-  /* margin: 0 auto; */
-}
 </style>
