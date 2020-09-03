@@ -21,12 +21,12 @@ import NavigationPage from "@/components/NavigationPage.vue";
 import ShoppingBag from "@/components/ShoppingBag.vue";
 import OrderCounter from "@/components/OrderCounter"
 import axios from "axios";
+
 export default {
   name: "productspage",
   components: {
-    NavigationPage,
-	ShoppingBag,
-	OrderCounter
+  NavigationPage,
+  ShoppingBag,
   },
   data() {
     return {
@@ -45,7 +45,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style  scoped>
 .container {
   background: #50a280;
 }
@@ -53,15 +53,11 @@ export default {
 .product-div {
   display: flex;
   flex-wrap: wrap;
-
-  justify-content: center;
-  align-items: center;
+}
+ul{
+  width: 80%ö
 }
 
-ul {
-  width: 80%;
-  list-style: none;
-}
 li {
   background: whitesmoke;
   box-shadow: 5px 5px 6px;
@@ -80,11 +76,4 @@ h3 {
   font-weight: 300;
 }
 
-
-.color-preview {
-  height: 30px;
-  width: 30px;
-  border-radius: 99rem;
-  border: solid 1px black;
-}
 </style>

@@ -37,6 +37,5 @@ p {
 
 button:hover {
   background: linear-gradient(to bottom, #222, #777);
-  text-decoration: underline salmon;
 }
 </style>
