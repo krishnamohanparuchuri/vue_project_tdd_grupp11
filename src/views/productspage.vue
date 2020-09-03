@@ -2,16 +2,14 @@
   <div class="container">
     <NavigationPage />
     <ShoppingBag />
-    <h1>Products</h1>
     <div class="product-div">
       <ul>
         <li v-for="product in products" :key="product.id">
           <h1>{{ product.title }}</h1>
           <h4>{{product.color}}</h4>
-          <h3>{{product.price}}</h3>
-          <button>+</button>
-          <p>Quantity</p>
-          <button>-</button>
+          <h3>{{product.price}} $</h3>
+          <div class="color-preview"></div>
+				<OrderCounter/>
         </li>
       </ul>
     </div>
@@ -21,10 +19,11 @@
 <script>
 import NavigationPage from "@/components/NavigationPage.vue";
 import ShoppingBag from "@/components/ShoppingBag.vue";
+import OrderCounter from "@/components/OrderCounter"
 import axios from "axios";
 
 export default {
-  name: "ProductsPage",
+  name: "productspage",
   components: {
   NavigationPage,
   ShoppingBag,
@@ -32,6 +31,7 @@ export default {
   data() {
     return {
       products: [],
+
     };
   },
   async created() {
@@ -51,11 +51,8 @@ export default {
 }
 
 .product-div {
-	display: flex;
-	flex-wrap:wrap;
-  background: #50a280;
-  
-}
+  display: flex;
+  flex-wrap: wrap;
 
 ul{
   width: 80%;
@@ -66,6 +63,18 @@ li {
   box-shadow: 5px 5px 6px;
   margin: 10px;
   border-radius: 7.25px;
+  padding: 15px;
+}
+
+.order-counter {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+h3 {
+  font-weight: 300;
+}
 
   /* margin: 0 auto; */
 }

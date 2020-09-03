@@ -24,15 +24,13 @@ export default {
 <style scoped>
 .container {
   background: #50a280;
-
 }
 
 .container-header {
   display: flex;
-  /* background: linear-gradient(to bottom, #00ff95, #00ce78);	
+  /* background: linear-gradient(to bottom, #00ff95, #00ce78);
 
    */
   background: #50a280;
-
 }
 </style>

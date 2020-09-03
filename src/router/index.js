@@ -23,8 +23,8 @@ export default new Router({
   },
   {
     path: '/products',
-    name: "ProductsPage",
-    component: ProductsPage
+    name: "productspage",
+    component: productspage
   },
 
   ],
