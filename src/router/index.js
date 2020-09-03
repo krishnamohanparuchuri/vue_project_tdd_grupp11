@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import HomePage from '../views/homepage'
-import AboutPage from '../views/aboutpage'
+import AboutPage from '../views/aboutpag'
 import productspage from '../views/productspage'
 
 
